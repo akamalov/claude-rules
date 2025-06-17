@@ -151,7 +151,7 @@ Then update `CLAUDE.md` to reference your new rules.
 ## 🔧 Integration with Claude Code
 
 ### Setup
-1. Ensure `.claude/CLAUDE.md` is in your project root or `.claude/` directory
+1. Ensure `CLAUDE.md` is in your project root, above `.claude` directory
 2. Claude Code will automatically detect and use these rules
 3. Reference specific rules in code comments when needed
 
