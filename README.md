@@ -6,9 +6,9 @@ This repository contains a comprehensive collection of development rules and gui
 
 ```
 claude-rules/
-├── README.md                                    # This file
+├── README.md                                   # This file
+├── CLAUDE.md                                   # Main rules file (references all others)
 └── .claude/
-    ├── CLAUDE.md                               # Main rules file (references all others)
     └── rules/
         ├── core-philosophy.md                  # Core development principles
         ├── communication-rules.md              # AI communication guidelines
@@ -41,7 +41,7 @@ cp -r .claude /path/to/your/project/
 Copy only the main rules file:
 
 ```bash
-cp .claude/CLAUDE.md /path/to/your/project/
+cp CLAUDE.md /path/to/your/project/
 ```
 
 ### Option 3: Selective Rules
