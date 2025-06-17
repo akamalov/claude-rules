@@ -4,7 +4,7 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## 🎯 Core Philosophy & Principles
 
-**Reference**: [core-philosophy.md](./rules/core-philosophy.md)
+**Reference**: [core-philosophy.md](.claude/rules/core-philosophy.md)
 
 - **Simplicity**: Prioritize simple, clear, and maintainable solutions
 - **Iterate**: Prefer iterating on existing code rather than building from scratch
@@ -14,7 +14,7 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## 🗣️ Communication Guidelines
 
-**Reference**: [communication-rules.md](./rules/communication-rules.md)
+**Reference**: [communication-rules.md](.claude/rules/communication-rules.md)
 
 - Split responses when necessary for clarity
 - Clearly indicate suggestions vs. applied fixes
@@ -23,7 +23,7 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## 💻 Implementation Workflow
 
-**Reference**: [implementation-workflow.md](./rules/implementation-workflow.md)
+**Reference**: [implementation-workflow.md](.claude/rules/implementation-workflow.md)
 
 ### ACT/Code Mode Protocol
 1. **Analyze Code**: Dependency analysis, flow analysis, impact assessment
@@ -37,14 +37,14 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## 🏗️ Architecture & System Design
 
-**Reference**: [architecture-understanding.md](./rules/architecture-understanding.md)
+**Reference**: [architecture-understanding.md](.claude/rules/architecture-understanding.md)
 
 - Understand existing architecture before making changes
 - Identify core components and their relationships
 - Respect architectural boundaries and patterns
 - Document architectural decisions and changes
 
-**Reference**: [system-patterns.md](./rules/system-patterns.md)
+**Reference**: [system-patterns.md](.claude/rules/system-patterns.md)
 
 - Apply appropriate design patterns
 - Maintain system consistency
@@ -52,7 +52,7 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## ✨ Code Quality & Style
 
-**Reference**: [code-style-quality.md](./rules/code-style-quality.md)
+**Reference**: [code-style-quality.md](.claude/rules/code-style-quality.md)
 
 ### Code Standards
 - Keep files under 200-300 lines
@@ -69,7 +69,7 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## 🧪 Testing & Quality Assurance
 
-**Reference**: [testing.md](./rules/testing.md)
+**Reference**: [testing.md](.claude/rules/testing.md)
 
 - Write comprehensive tests for new functionality
 - Maintain existing test coverage
@@ -79,7 +79,7 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## 🔍 Debugging & Troubleshooting
 
-**Reference**: [debugging-workflow.md](./rules/debugging-workflow.md)
+**Reference**: [debugging-workflow.md](.claude/rules/debugging-workflow.md)
 
 - Systematic approach to problem identification
 - Document debugging steps and findings
@@ -88,7 +88,7 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## 📁 Directory Structure & Organization
 
-**Reference**: [directory-structure.md](./rules/directory-structure.md)
+**Reference**: [directory-structure.md](.claude/rules/directory-structure.md)
 
 - Follow established project structure conventions
 - Organize files logically by functionality
@@ -97,7 +97,7 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## 🔒 Security Guidelines
 
-**Reference**: [security.md](./rules/security.md)
+**Reference**: [security.md](.claude/rules/security.md)
 
 - Follow security best practices
 - Conduct security audits for sensitive changes
@@ -107,7 +107,7 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## 📝 Documentation & Memory Management
 
-**Reference**: [documentation-memory.md](./rules/documentation-memory.md)
+**Reference**: [documentation-memory.md](.claude/rules/documentation-memory.md)
 
 - Maintain comprehensive documentation
 - Update documentation with code changes
@@ -116,7 +116,7 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## 🔄 Version Control & Environment Management
 
-**Reference**: [version-control.md](./rules/version-control.md)
+**Reference**: [version-control.md](.claude/rules/version-control.md)
 
 - Follow Git best practices
 - Use appropriate branching strategies
@@ -125,7 +125,7 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## 📋 Planning & Project Management
 
-**Reference**: [planning-workflow.md](./rules/planning-workflow.md)
+**Reference**: [planning-workflow.md](.claude/rules/planning-workflow.md)
 
 ### PLAN/Architect Mode
 - Systematic project analysis
@@ -135,7 +135,7 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## 🚀 Improvements & Optimization
 
-**Reference**: [improvements-suggestions.md](./rules/improvements-suggestions.md)
+**Reference**: [improvements-suggestions.md](.claude/rules/improvements-suggestions.md)
 
 - Identify optimization opportunities
 - Suggest performance improvements
@@ -148,16 +148,16 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 When working with APM-based projects, reference these specialized guides:
 
-- **[apm_impl_plan_critical_elements_reminder.md](./rules/apm_impl_plan_critical_elements_reminder.md)**: Implementation plan checklist
-- **[apm_memory_system_format_source.md](./rules/apm_memory_system_format_source.md)**: Memory bank system setup
-- **[apm_plan_format_source.md](./rules/apm_plan_format_source.md)**: Implementation plan formatting
-- **[apm_task_prompt_plan_guidance_incorporation_reminder.md](./rules/apm_task_prompt_plan_guidance_incorporation_reminder.md)**: Task assignment guidance
-- **[apm_discovery_synthesis_reminder.md](./rules/apm_discovery_synthesis_reminder.md)**: Discovery and synthesis procedures
-- **[apm_memory_naming_validation_reminder.md](./rules/apm_memory_naming_validation_reminder.md)**: Memory validation procedures
+- **[apm_impl_plan_critical_elements_reminder.md](.claude/rules/apm_impl_plan_critical_elements_reminder.md)**: Implementation plan checklist
+- **[apm_memory_system_format_source.md](.claude/rules/apm_memory_system_format_source.md)**: Memory bank system setup
+- **[apm_plan_format_source.md](.claude/rules/apm_plan_format_source.md)**: Implementation plan formatting
+- **[apm_task_prompt_plan_guidance_incorporation_reminder.md](.claude/rules/apm_task_prompt_plan_guidance_incorporation_reminder.md)**: Task assignment guidance
+- **[apm_discovery_synthesis_reminder.md](.claude/rules/apm_discovery_synthesis_reminder.md)**: Discovery and synthesis procedures
+- **[apm_memory_naming_validation_reminder.md](.claude/rules/apm_memory_naming_validation_reminder.md)**: Memory validation procedures
 
 ### SWE-Bench Workflow
 
-**Reference**: [swebench-workflow.md](./rules/swebench-workflow.md)
+**Reference**: [swebench-workflow.md](.claude/rules/swebench-workflow.md)
 
 - Specialized workflow for SWE-Bench challenges
 - Issue analysis and solution development
@@ -174,7 +174,7 @@ When working with APM-based projects, reference these specialized guides:
 ### File Reference Format
 
 When referencing specific rules during development:
-- Use the pattern `[rule-name.md](./rule-name.md)` for detailed guidance
+- Use the pattern `[rule-name.md](.claude/rules/rule-name.md)` for detailed guidance
 - Reference specific sections for targeted guidance
 - Combine multiple rules as needed for comprehensive coverage
 
