@@ -1,6 +1,6 @@
 # Claude Code Development Rules
 
-This repository contains a comprehensive collection of development rules and guidelines specifically designed for Claude Code. These rules provide consistent, high-quality development practices across diverse project types and requirements.
+This repository contains a comprehensive collection of development rules, guidelines, and prompt templates specifically designed for Claude Code. These resources provide consistent, high-quality development practices across diverse project types and requirements, along with structured prompt templates for Agentic Project Management (APM) workflows.
 
 ## 📁 Repository Structure
 
@@ -9,7 +9,21 @@ claude-rules/
 ├── README.md                                   # This file
 ├── CLAUDE.md                                   # Main rules file (references all others)
 └── .claude/
-    └── rules/
+    ├── prompts/                                # Claude Code prompt templates
+    │   ├── 00_Initial_Manager_Setup/           # Manager Agent initialization
+    │   │   ├── 01_Initiation_Prompt.md         # Primary Manager Agent activation
+    │   │   └── 02_Codebase_Guidance.md         # Guided project discovery protocol
+    │   ├── 01_Manager_Agent_Core_Guides/       # Core APM process guides
+    │   │   ├── 01_Implementation_Plan_Guide.md # Implementation Plan formatting
+    │   │   ├── 02_Memory_Bank_Guide.md         # Memory Bank system setup
+    │   │   ├── 03_Task_Assignment_Prompts_Guide.md # Task prompt creation
+    │   │   ├── 04_Review_And_Feedback_Guide.md # Work review protocols
+    │   │   └── 05_Handover_Protocol_Guide.md   # Agent handover procedures
+    │   └── 02_Utility_Prompts_And_Format_Definitions/
+    │       ├── Handover_Artifact_Format.md     # Handover file formats
+    │       ├── Imlementation_Agent_Onboarding.md # Implementation Agent setup
+    │       └── Memory_Bank_Log_Format.md       # Memory Bank entry formatting
+    └── rules/                                  # Development rules (21 files)
         ├── core-philosophy.md                  # Core development principles
         ├── communication-rules.md              # AI communication guidelines
         ├── implementation-workflow.md          # ACT/Code mode procedures
@@ -84,6 +98,11 @@ cp .claude/rules/code-style-quality.md /path/to/your/project/.claude/rules/
 - **`swebench-workflow.md`** - SWE-Bench challenge procedures
 - **`apm_*.md`** - Agentic Project Management framework (6 specialized files)
 
+### 📝 Prompt Templates
+- **`00_Initial_Manager_Setup/`** - Manager Agent initialization prompts (2 files)
+- **`01_Manager_Agent_Core_Guides/`** - Core APM process guides (5 files)
+- **`02_Utility_Prompts_And_Format_Definitions/`** - Utility prompts and formats (3 files)
+
 ## 🎯 Usage Examples
 
 ### For a New Project
@@ -105,14 +124,19 @@ cp -r .claude/rules /path/to/existing/project/.claude/
 
 ### For Specialized Workflows
 ```bash
-# APM Projects - include all APM files
+# APM Projects - include all APM files and prompts
 cp .claude/rules/apm_*.md /path/to/project/.claude/rules/
+cp -r .claude/prompts /path/to/project/.claude/
 
 # SWE-Bench Projects
 cp .claude/rules/swebench-workflow.md /path/to/project/.claude/rules/
 
 # Security-Critical Projects
 cp .claude/rules/security.md /path/to/project/.claude/rules/
+
+# Manager Agent Setup - APM workflow initialization
+cp -r .claude/prompts/00_Initial_Manager_Setup /path/to/project/.claude/prompts/
+cp -r .claude/prompts/01_Manager_Agent_Core_Guides /path/to/project/.claude/prompts/
 ```
 
 ## 📊 Rule Priority System
@@ -154,12 +178,20 @@ Then update `CLAUDE.md` to reference your new rules.
 1. Ensure `CLAUDE.md` is in your project root, above `.claude` directory
 2. Claude Code will automatically detect and use these rules
 3. Reference specific rules in code comments when needed
+4. Use prompt templates from `.claude/prompts/` for structured workflows
 
 ### Usage in Development
 1. Review applicable rules before starting new features
 2. Reference rules during code reviews
 3. Use rule names in prompts for targeted guidance
-4. Update rules based on project learnings
+4. Leverage APM prompt templates for complex project management
+5. Update rules based on project learnings
+
+### Prompt Templates Usage
+- **Manager Setup**: Use `00_Initial_Manager_Setup/` prompts to initialize APM workflows
+- **Implementation Planning**: Reference `01_Manager_Agent_Core_Guides/` for structured development
+- **Handover Protocols**: Apply `02_Utility_Prompts_And_Format_Definitions/` for agent transitions
+- **Memory Management**: Utilize memory bank formats for project continuity
 
 ## 📈 Rule Maintenance
 
@@ -177,4 +209,4 @@ Then update `CLAUDE.md` to reference your new rules.
 
 ---
 
-*These rules provide a comprehensive foundation for consistent, high-quality development with Claude Code across diverse project types and requirements.*
+*These rules and prompt templates provide a comprehensive foundation for consistent, high-quality development with Claude Code across diverse project types and requirements. The structured APM prompts enable sophisticated project management workflows, while the development rules ensure code quality and best practices.*
