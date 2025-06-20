@@ -6,40 +6,40 @@ This repository contains a comprehensive collection of development rules, guidel
 
 ```
 claude-rules/
-├── README.md                                   # This file
-├── CLAUDE.md                                   # Main rules file (references all others)
+├── README.md                                                # This file
+├── CLAUDE.md                                                # Main rules file (references all others)
 └── .claude/
-    ├── prompts/                                # Claude Code prompt templates
-    │   ├── 00_Initial_Manager_Setup/           # Manager Agent initialization
-    │   │   ├── 01_Initiation_Prompt.md         # Primary Manager Agent activation
-    │   │   └── 02_Codebase_Guidance.md         # Guided project discovery protocol
-    │   ├── 01_Manager_Agent_Core_Guides/       # Core APM process guides
-    │   │   ├── 01_Implementation_Plan_Guide.md # Implementation Plan formatting
-    │   │   ├── 02_Memory_Bank_Guide.md         # Memory Bank system setup
-    │   │   ├── 03_Task_Assignment_Prompts_Guide.md # Task prompt creation
-    │   │   ├── 04_Review_And_Feedback_Guide.md # Work review protocols
-    │   │   └── 05_Handover_Protocol_Guide.md   # Agent handover procedures
+    ├── prompts/                                             # Claude Code prompt templates
+    │   ├── 00_Initial_Manager_Setup/                        # Manager Agent initialization
+    │   │   ├── 01_Initiation_Prompt.md                      # Primary Manager Agent activation
+    │   │   └── 02_Codebase_Guidance.md                      # Guided project discovery protocol
+    │   ├── 01_Manager_Agent_Core_Guides/                    # Core APM process guides
+    │   │   ├── 01_Implementation_Plan_Guide.md              # Implementation Plan formatting
+    │   │   ├── 02_Memory_Bank_Guide.md                      # Memory Bank system setup
+    │   │   ├── 03_Task_Assignment_Prompts_Guide.md          # Task prompt creation
+    │   │   ├── 04_Review_And_Feedback_Guide.md              # Work review protocols
+    │   │   └── 05_Handover_Protocol_Guide.md                # Agent handover procedures
     │   └── 02_Utility_Prompts_And_Format_Definitions/
-    │       ├── Handover_Artifact_Format.md     # Handover file formats
-    │       ├── Imlementation_Agent_Onboarding.md # Implementation Agent setup
-    │       └── Memory_Bank_Log_Format.md       # Memory Bank entry formatting
-    └── rules/                                  # Development rules (21 files)
-        ├── core-philosophy.md                  # Core development principles
-        ├── communication-rules.md              # AI communication guidelines
-        ├── implementation-workflow.md          # ACT/Code mode procedures
-        ├── planning-workflow.md                # PLAN/Architect mode procedures
-        ├── code-style-quality.md               # Code quality standards
-        ├── testing.md                          # Testing procedures
-        ├── debugging-workflow.md               # Debugging protocols
-        ├── security.md                         # Security guidelines
-        ├── architecture-understanding.md       # Architecture adherence
-        ├── system-patterns.md                  # System design patterns
-        ├── directory-structure.md              # Project organization
-        ├── documentation-memory.md             # Documentation standards
-        ├── version-control.md                  # Git and environment management
-        ├── improvements-suggestions.md         # Optimization guidelines
-        ├── swebench-workflow.md                # SWE-Bench specialized workflow
-        └── apm_*.md                           # APM framework rules (6 files)
+    │       ├── Handover_Artifact_Format.md                  # Handover file formats
+    │       ├── Imlementation_Agent_Onboarding.md            # Implementation Agent setup
+    │       └── Memory_Bank_Log_Format.md                    # Memory Bank entry formatting
+    └── rules/                                               # Development rules (21 files)
+        ├── core-philosophy.md                               # Core development principles
+        ├── communication-rules.md                           # AI communication guidelines
+        ├── implementation-workflow.md                       # ACT/Code mode procedures
+        ├── planning-workflow.md                             # PLAN/Architect mode procedures
+        ├── code-style-quality.md                            # Code quality standards
+        ├── testing.md                                       # Testing procedures
+        ├── debugging-workflow.md                            # Debugging protocols
+        ├── security.md                                      # Security guidelines
+        ├── architecture-understanding.md                    # Architecture adherence
+        ├── system-patterns.md                               # System design patterns
+        ├── directory-structure.md                           # Project organization
+        ├── documentation-memory.md                          # Documentation standards
+        ├── version-control.md                               # Git and environment management
+        ├── improvements-suggestions.md                      # Optimization guidelines
+        ├── swebench-workflow.md                             # SWE-Bench specialized workflow
+        └── apm_*.md                                         # APM framework rules (6 files)
 ```
 
 ## 🚀 How to Use These Rules
