@@ -180,10 +180,26 @@ When referencing specific rules during development:
 
 ### Integration with Project Structure
 
-This CLAUDE.md file should be placed in your project root or `.claude/` directory structure:
+Prompts should be placed under `.claude/` directory
+This CLAUDE.md file should be placed in your project root or `.claude/` directory structure: 
 
 ```
+
 .claude/
+├── prompts/
+│   ├── 00_Initial_Manager_Setup/           # Manager Agent initialization
+│   ├── 01_Initiation_Prompt.md             # Primary Manager Agent activation
+│   └── 02_Codebase_Guidance.md             # Guided project discovery protocol
+├── ├── 1_Manager_Agent_Core_Guides/        # Core APM process guides
+│   ├── 01_Implementation_Plan_Guide.md     # Implementation Plan formatting
+│   ├── 02_Memory_Bank_Guide.md             # Memory Bank system setup
+│   ├── 03_Task_Assignment_Prompts_Guide.md # Task prompt creation
+│   ├── 04_Review_And_Feedback_Guide.md     # Work review protocols
+│   └── 05_Handover_Protocol_Guide.md       # Agent handover procedures
+│── ├── 02_Utility_Prompts_And_Format_Definitions/
+│   ├── Handover_Artifact_Format.md         # Handover file formats
+│   ├── Imlementation_Agent_Onboarding.md   # Implementation Agent setup
+│   └── Memory_Bank_Log_Format.md           # Memory Bank entry formatting
 ├── rules/
 │   ├── core-philosophy.md
 │   ├── code-style-quality.md
