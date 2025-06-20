@@ -66,6 +66,7 @@ This file provides comprehensive guidance to Claude Code when working with code 
 - Organize files into logical directories
 - Prefer importing functions over direct file modification
 - Keep modules small and focused
+- Reference Claude Code prompts in .claude/prompts/ directory
 
 ## 🧪 Testing & Quality Assurance
 
