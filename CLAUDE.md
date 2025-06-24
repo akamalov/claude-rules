@@ -143,6 +143,14 @@ This file provides comprehensive guidance to Claude Code when working with code 
 - Recommend architectural enhancements
 - Balance technical debt management
 
+### Feature Implementation
+
+- Launch parallel Tasks immediately upon feature reqquest
+- Skip asking what type of implementation unless absolutely critical
+- Always use 7-parallel-task method for efficiency
+
+**Reference**: [feature-implementation.md](.claude/rules/feature-implementation.md)
+
 ## 🔧 Specialized Workflows
 
 ### APM (Agentic Project Management) Framework
