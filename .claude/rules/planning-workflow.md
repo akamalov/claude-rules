@@ -39,13 +39,15 @@ flowchart TD
         *   If docs are missing, unclear, or conflicting, **ask for clarification**.
     *   **Architecture Adherence:**
         *   Understand and respect module boundaries, data flow, interfaces, and dependencies from `docs/architecture.md`.
-        *   Validate that proposed changes comply with the architecture. Warn and propose compliant solutions if violations are detected. (See `architecture-understanding.mdc`)
+        *   Validate that proposed changes comply with the architecture. Warn and propose compliant solutions if violations are detected. (See `architecture-understanding.md`)
     *   **Use Existing Patterns:** Reference `README.md` and `docs/technical.md` to understand and use existing patterns/technologies. Exhaust options with existing implementations before proposing new ones.
 
 **2. Formulate Solution:**
     *   **<STEP BY STEP REASONING>**
         *   **<DECOMPOSE>** Have a meta-architecture plan. Break the problem into smaller sub-problems/concepts.
-        *   Think of all possible solutions.
+        *   Ultrathink of all possible solutions.
+        *   Emphasis on simplicity and speed of the application
+        *   Create checks which will intercepts problems with an applicaiton before application is serving pages
         *   Define evaluation criteria and trade-offs.
         *   Find the optimal solution, explain why it's optimal and its trade-offs.
         *   **<WEB USE>** Use web search (e.g., Perplexity) if needed for research.

@@ -17,6 +17,6 @@ flowchart TD
     Root --> Other[Other Directories]
 ```
 
-*   **Memory Files:** Specific documentation files are maintained within `docs/` and `tasks/` (See `documentation-memory.mdc`).
+*   **Memory Files:** Specific documentation files are maintained within `docs/` and `tasks/` (See `documentation-memory.md`).
 *   **Rules:** AI guidance rules are kept in `.cursor/rules/`.
 *   **Fixes:** Document complex bug fixes in `fixes/`.

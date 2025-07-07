@@ -8,7 +8,7 @@
 flowchart TD
     Start[Start] --> Context[Check Memory Files (Core Files always, rest based on context) ]
     Context --> Update[Update Documentation]
-    Update --> Rules[Update [lessons-learned.mdc](mdc:.cursor/rules/lessons-learned.mdc), [error-documentation.mdc](mdc:.cursor/rules/error-documentation.mdc) if needed]
+    Update --> Rules[Update [lessons-learned.md].md:.cursor/rules/lessons-learned.md), [error-documentation.md].md:.cursor/rules/error-documentation.md) if needed]
     Rules --> Execute[Execute Task]
     Execute --> Document[Document Changes in Memory Files]
 ```
@@ -70,7 +70,7 @@ flowchart TD
         *   Always implement changes on my behalf. If you cannot change files, you need state so and print out full copy of the edited file so I can overwrite/replace current file. Do not offer partial code, augmentation-in-place. It is always overwrite of the existing file if you cannot change it.
    
 **[Step 4: Testing]**
-    *   Perform **<TESTING>** (see `testing.mdc`).
+    *   Perform **<TESTING>** (see `testing.md`).
 
 **[Step 5: Loop]**
     *   Repeat steps 1-4 systematically for all changes.

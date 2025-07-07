@@ -7,7 +7,7 @@
 *   **TDD Focus:**
     *   *New Features:* Outline tests -> write failing tests -> implement code -> refactor.
     *   *Bug Fixes:* Write a test reproducing the bug *before* fixing it.
-*   **<DEPENDENCY BASED TESTING>** Create unit tests for new functionality. Run tests affected by the changes (**<ANALYZE CODE>** from `implementation-workflow.mdc`) to confirm existing behavior.
+*   **<DEPENDENCY BASED TESTING>** Create unit tests for new functionality. Run tests affected by the changes (**<ANALYZE CODE>** from `implementation-workflow.md`) to confirm existing behavior.
 *   **<NO BREAKAGE ASSERTION>** Run tests *yourself* after proposing a change and verify they pass. Be certain code won't be broken.
 *   **Test Location:** Write test logic in separate files from implementation code.
 *   **<TEST PLAN>**
@@ -20,4 +20,4 @@
 *   **No Mock Data (Except Tests):** Use mocks *only* in test environments. Dev/Prod use real/realistic data. Never add stubbing/fake data patterns to dev/prod code.
 *   **Manual Verification:** Supplement automated tests with manual checks (especially UI).
 *   **Test First (Workflow Preference):** Write tests first, then code, run tests, update code until tests pass. (Applies particularly to new features).
-*   **Document Testing:** Document in memory files as specified by `documentation-memory.mdc`.
+*   **Document Testing:** Document in memory files as specified by `documentation-memory.md`.
