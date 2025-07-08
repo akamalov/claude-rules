@@ -7,7 +7,7 @@ flowchart TD
     Root[Project Root]
     Root --> Docs[docs/]
     Root --> Tasks[tasks/]
-    Root --> Cursor[.cursor/rules/]
+    Root --> Claude[.claude/rules/]
     Root --> CLINE[.clinerules]
     Root --> SourceCode[src/]
     Root --> Test[test/]
@@ -18,5 +18,5 @@ flowchart TD
 ```
 
 *   **Memory Files:** Specific documentation files are maintained within `docs/` and `tasks/` (See `documentation-memory.md`).
-*   **Rules:** AI guidance rules are kept in `.cursor/rules/`.
+*   **Rules:** AI guidance rules are kept in `.claude/rules/`.
 *   **Fixes:** Document complex bug fixes in `fixes/`.

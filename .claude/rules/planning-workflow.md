@@ -59,7 +59,7 @@ flowchart TD
         *   Reason its optimality compared to alternatives.
         *   State all assumptions, choices, decisions, and trade-offs.
         *   Restate the user's query if needed for clarity.
-        *   When creating a project, ask Cursor to include software stack versions and compatible module versions 
+        *   When creating a project, ask Claude Code to include software stack versions and compatible module versions 
         *   Records software stack, versions and module dependencies and their versions
         *   Document the entire database schema in docs/planning/[project-name]-planning.md.
         *   After adding a major feature or completing a milestone, update docs/tasks/[project-name]-milestones.md.

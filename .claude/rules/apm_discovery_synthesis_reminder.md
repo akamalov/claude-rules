@@ -1,4 +1,4 @@
-# A reminder for the agent managing project discovery to synthesize information and transition to planning after extensive information gathering, as per APM protocol. This rule is intended for use if Cursor IDE's rule functionality is active.
+# A reminder for the agent managing project discovery to synthesize information and transition to planning after extensive information gathering, as per APM protocol. This rule is intended for use if Claude Code IDE's rule functionality is active.
 
 ## APM Discovery Synthesis & Transition Reminder
 

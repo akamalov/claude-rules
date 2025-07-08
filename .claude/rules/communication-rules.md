@@ -8,4 +8,4 @@
 
 ## Lessons Learned
 
-* Every project you undertake, you need to track the lessons learned and append these lessons learned in file called docs/planning/lessons-learned.md file, which will become Cursor rule filewhich will be referenced in the future projects to come.
+* Every project you undertake, you need to track the lessons learned and append these lessons learned in file called docs/planning/lessons-learned.md file, which will become Claude Code rule filewhich will be referenced in the future projects to come.

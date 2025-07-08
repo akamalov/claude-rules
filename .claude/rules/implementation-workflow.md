@@ -8,7 +8,7 @@
 flowchart TD
     Start[Start] --> Context[Check Memory Files (Core Files always, rest based on context) ]
     Context --> Update[Update Documentation]
-    Update --> Rules[Update [lessons-learned.md].md:.cursor/rules/lessons-learned.md), [error-documentation.md].md:.cursor/rules/error-documentation.md) if needed]
+    Update --> Rules[Update [lessons-learned.md].md:.claude/rules/lessons-learned.md), [error-documentation.md].md:.claude/rules/error-documentation.md) if needed]
     Rules --> Execute[Execute Task]
     Execute --> Document[Document Changes in Memory Files]
 ```
