@@ -18,3 +18,4 @@
     *   **Implement Fix:** Modify code using <SYSTEMATIC CODE PROTOCOL> (from `implementation-workflow.md`) and <TESTING> (from `testing.md`).
     *   **Console/Log Analysis:** Always check browser/server console output. Report findings. Use targeted logging for complex issues and *check the output*.
     *   **Check `fixes/`:** Look for documented solutions to similar past issues in the `fixes/` directory.
+    *   **Periodically check your own process to make sure that your terminal or other command is not in stuck state
