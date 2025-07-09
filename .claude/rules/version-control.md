@@ -14,5 +14,6 @@
     *  * `.claude/`
     *  * `.gemini/`
     *  * `.cursor/`
+    *  * `final_review_gate.py`
 *   **Dependencies:** Use conda for Python and dependencies.
 *   **Server Management:** Kill related running servers before starting new ones. Restart after relevant config/backend changes.
