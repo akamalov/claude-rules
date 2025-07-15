@@ -17,3 +17,25 @@
     *  * `final_review_gate.py`
 *   **Dependencies:** Use conda for Python and dependencies.
 *   **Server Management:** Kill related running servers before starting new ones. Restart after relevant config/backend changes.
+
+* Follow Conventional Commits v1.0.0:
+
+```
+<type>[optional scope]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+**Commit Types**:
+- `feat`: New feature (MINOR version)
+- `fix`: Bug fix (PATCH version)
+- `refactor`: Code restructuring without behavior change
+- `perf`: Performance improvement
+- `docs`: Documentation only
+- `test`: Test additions or corrections
+- `build`: Build system or dependency changes
+- `ci`: CI/CD configuration changes
+- `chore`: Maintenance tasks
+- `style`: Code formatting (whitespace, semicolons, etc)
