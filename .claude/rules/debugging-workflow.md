@@ -19,3 +19,4 @@
     *   **Console/Log Analysis:** Always check browser/server console output. Report findings. Use targeted logging for complex issues and *check the output*.
     *   **Check `fixes/`:** Look for documented solutions to similar past issues in the `fixes/` directory.
     *   **Periodically check your own process to make sure that your terminal or other command is not in stuck state
+    *   **When creating temporary files, scripts for testing and debugging, create a temporary directory tmp/ and execute it there. DO NOT create testing scripts, testing files and test markdown files under root of the directory. All debugging and testing scripts and files should be created and ran under tmp/ directory under the root of the project.
