@@ -49,6 +49,7 @@
 - Make minimal necessary changes
 - Document changes (before/after)
 - Verify changes don't introduce new vulnerabilities
+- Do not create test files under project root directory. Use "tests/" directory to create and test scripts and files
 
 ### Security Principles
 - **Server-Side Authority**: Keep sensitive logic strictly server-side
