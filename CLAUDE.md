@@ -4,152 +4,82 @@ This file provides comprehensive guidance to Claude Code when working with code 
 
 ## 🎯 Core Philosophy & Principles
 
-**Reference**: [core-philosophy.md](.claude/rules/core-philosophy.md)
-
 - **Simplicity**: Prioritize simple, clear, and maintainable solutions
-- **Iterate**: Prefer iterating on existing code rather than building from scratch
+- **Iterate**: Prefer iterating on existing code rather than building from scratch  
 - **Focus**: Concentrate on the specific task assigned
 - **Quality**: Strive for clean, organized, well-tested, and secure codebase
 - **Consistency**: Maintain consistent coding style throughout the project
 
-## 🗣️ Communication Guidelines
+## 💻 Development Workflow
 
-**Reference**: [communication-rules.md](.claude/rules/communication-rules.md)
+**Reference**: [01-development-workflow.md](.claude/rules/01-development-workflow.md)
 
-- Split responses when necessary for clarity
-- Clearly indicate suggestions vs. applied fixes
-- Use check-ins for large tasks to confirm understanding
-- Track lessons learned in documentation
+### MODE Selection & Systematic Process
+- **PLAN MODE**: Architecture, planning, requirements analysis
+- **ACT MODE**: Implementation, coding, testing
+- Systematic development protocol with analysis, implementation, and validation phases
 
-## 💻 Implementation Workflow
+### Key Workflow Elements
+- Requirements understanding and code analysis
+- Incremental rollouts with simulation validation
+- Architecture adherence and quality standards
+- Checkpointing and progress recording
 
-**Reference**: [implementation-workflow.md](.claude/rules/implementation-workflow.md)
+## 🧪 Testing & Security
 
-### ACT/Code Mode Protocol
-1. **Analyze Code**: Dependency analysis, flow analysis, impact assessment
-2. **Plan Code**: Structured proposals with clear reasoning
-3. **Make Changes**: Incremental rollouts with simulation validation
-4. **Testing**: Comprehensive testing procedures
-5. **Loop**: Repeat systematically for all changes
-6. **Optimize**: Performance and code quality improvements
-7. **Checkpointing**: Named milestones with version control
-8. **Progress Recording**: Document implementation status
+**Reference**: [02-testing-security.md](.claude/rules/02-testing-security.md)
 
-## 🏗️ Architecture & System Design
+### Testing Framework
+- **TDD Focus**: Test-driven development with comprehensive coverage
+- **Bug Fix Protocol**: Write reproducing tests before fixes
+- **No Breakage Assertion**: All tests must pass before committing
+- Test planning with edge case coverage
 
-**Reference**: [architecture-understanding.md](.claude/rules/architecture-understanding.md)
+### Security Framework
+- **3-Phase Security Audit**: Analysis → Planning → Implementation
+- **Security Principles**: Server-side authority, input sanitization, credential protection
+- **Key Focus Areas**: Authentication, input validation, exposed credentials, IDOR
 
-- Understand existing architecture before making changes
-- Identify core components and their relationships
-- Respect architectural boundaries and patterns
-- Document architectural decisions and changes
+## 🗣️ Communication & Documentation
 
-**Reference**: [system-patterns.md](.claude/rules/system-patterns.md)
+**Reference**: [03-communication-documentation.md](.claude/rules/03-communication-documentation.md)
 
-- Apply appropriate design patterns
-- Maintain system consistency
-- Follow established conventions
+### Communication Standards
+- **Clarity First**: Clear, specific communication with context
+- **Split Responses**: Multiple responses when needed for clarity
+- **Confirmation Protocol**: Check-ins for complex tasks
+- **Incremental Steps**: Break down complex tasks
 
-## ✨ Code Quality & Style
+### Memory Files Structure
+#### Core Files (Required)
+1. **`docs/product_requirement_docs.md`**: PRD/SOP (Why, goals, scope)
+2. **`docs/architecture.md`**: System architecture (How, components, dependencies)  
+3. **`docs/technical.md`**: Dev environment, stack, tech decisions, patterns
+4. **`tasks/tasks_plan.md`**: Detailed task backlog, progress, status, issues
+5. **`tasks/active_context.md`**: Current work focus, decisions, recent changes
+6. **`.claude/rules/05-error-documentation.md`**: Reusable fixes, known issues log
+7. **`.claude/rules/06-lessons-learned.md`**: Learning journal (patterns, preferences)
 
-**Reference**: [code-style-quality.md](.claude/rules/code-style-quality.md)
+## ✨ Code Quality & Standards
 
-### Code Standards
-- Keep files under 200-300 lines
-- Use descriptive and meaningful names
-- Add comments for non-obvious code
-- Maintain consistent coding style
-- Avoid code duplication
-- Refactor purposefully with holistic checks
+**Reference**: [04-code-quality-standards.md](.claude/rules/04-code-quality-standards.md)
 
-### File Management
-- Organize files into logical directories
-- Prefer importing functions over direct file modification
-- Keep modules small and focused
-- Reference Claude Code prompts in .claude/prompts/ directory
+### Core Quality Principles
+- **Clean Code**: Readable, maintainable, self-documenting code
+- **DRY Principle**: Eliminate code duplication through abstraction
+- **KISS Principle**: Choose simplest solutions that meet requirements
+- **Modularity**: Atomic functions, single responsibility, clear interfaces
 
-## 🧪 Testing & Quality Assurance
+### Code Organization Standards
+- **File Management**: Target < 200-300 lines per file
+- **Directory Structure**: Logical organization with clear naming
+- **Import Strategy**: Prefer specific function imports
+- **Dependency Management**: Minimize and clearly define dependencies
 
-**Reference**: [testing.md](.claude/rules/testing.md)
-
-- Write comprehensive tests for new functionality
-- Maintain existing test coverage
-- Use appropriate testing strategies
-- Verify functionality across environments
-- Run tests before finalizing changes
-
-## 🔍 Debugging & Troubleshooting
-
-**Reference**: [debugging-workflow.md](.claude/rules/debugging-workflow.md)
-
-- Systematic approach to problem identification
-- Document debugging steps and findings
-- Use appropriate debugging tools and techniques
-- Maintain debugging logs during development
-
-## 📁 Directory Structure & Organization
-
-**Reference**: [directory-structure.md](.claude/rules/directory-structure.md)
-
-- Follow established project structure conventions
-- Organize files logically by functionality
-- Maintain clear separation of concerns
-- Document structure decisions
-
-## 🔒 Security Guidelines
-
-**Reference**: [security.md](.claude/rules/security.md)
-
-- Follow security best practices
-- Conduct security audits for sensitive changes
-- Never expose secrets or sensitive data
-- Validate inputs and sanitize outputs
-- Use secure communication protocols
-
-## 📝 Documentation & Memory Management
-
-**Reference**: [documentation-memory.md](.claude/rules/documentation-memory.md)
-
-- Maintain comprehensive documentation
-- Update documentation with code changes
-- Use memory files for project continuity
-- Document architectural decisions
-
-## 🔄 Version Control & Environment Management
-
-**Reference**: [version-control.md](.claude/rules/version-control.md)
-
-- Follow Git best practices
-- Use appropriate branching strategies
-- Maintain clean commit history
-- Handle environment-specific configurations properly
-
-## 📋 Planning & Project Management
-
-**Reference**: [planning-workflow.md](.claude/rules/planning-workflow.md)
-
-### PLAN/Architect Mode
-- Systematic project analysis
-- Requirement gathering and validation
-- Strategic planning with stakeholder alignment
-- Risk assessment and mitigation
-
-## 🚀 Improvements & Optimization
-
-**Reference**: [improvements-suggestions.md](.claude/rules/improvements-suggestions.md)
-
-- Identify optimization opportunities
-- Suggest performance improvements
-- Recommend architectural enhancements
-- Balance technical debt management
-
-### Feature Implementation
-
-- Launch parallel Tasks immediately upon feature reqquest
-- Skip asking what type of implementation unless absolutely critical
-- Always use 7-parallel-task method for efficiency
-
-**Reference**: [feature-implementation.md](.claude/rules/feature-implementation.md)
+### Quality Assurance Process
+- **Pre-Commit Checks**: Formatting, linting, testing, security scans
+- **Code Reviews**: DRY/KISS compliance, performance, readability, security
+- **Continuous Improvement**: Regular refactoring and pattern analysis
 
 ## 🔧 Specialized Workflows
 
@@ -240,9 +170,17 @@ For structured development workflows with quality assurance:
 
 ### Rule Application Priority
 
-1. **Always Apply**: Core philosophy, communication rules, code quality
-2. **Context-Specific**: Architecture, testing, security (based on project needs)
-3. **Workflow-Specific**: APM framework, Language Engineering, PoC Engineering, Research, Workflow Automation (when explicitly required)
+1. **Always Apply**: 
+   - Core philosophy and principles
+   - [01-development-workflow.md](.claude/rules/01-development-workflow.md) - Development process and standards
+   - [04-code-quality-standards.md](.claude/rules/04-code-quality-standards.md) - Code quality and organization
+   - [03-communication-documentation.md](.claude/rules/03-communication-documentation.md) - Communication and documentation standards
+
+2. **Context-Specific**: 
+   - [02-testing-security.md](.claude/rules/02-testing-security.md) - Applied based on project security requirements and testing needs
+
+3. **Workflow-Specific**: 
+   - APM framework, Language Engineering, PoC Engineering, Research, Workflow Automation (when explicitly required by project type)
 
 ### Agent Type Classification
 
@@ -268,10 +206,16 @@ These agents manage the project lifecycle:
 ### File Reference Format
 
 When referencing specific rules during development:
-- Use the pattern `[rule-name.md](.claude/rules/rule-name.md)` for detailed guidance
+- Use the pattern `[##-rule-name.md](.claude/rules/##-rule-name.md)` for core development rules
 - Use the pattern `[prompt-name.md](.claude/prompts/category/prompt-name.md)` for specialized agents
-- Reference specific sections for targeted guidance
+- Reference specific sections within rules for targeted guidance
 - Combine multiple rules as needed for comprehensive coverage
+
+#### Core Rule References
+- **Development Process**: [01-development-workflow.md](.claude/rules/01-development-workflow.md)
+- **Testing & Security**: [02-testing-security.md](.claude/rules/02-testing-security.md)  
+- **Communication & Docs**: [03-communication-documentation.md](.claude/rules/03-communication-documentation.md)
+- **Code Quality**: [04-code-quality-standards.md](.claude/rules/04-code-quality-standards.md)
 
 ### Prompt Selection Guidelines
 
@@ -347,24 +291,50 @@ This CLAUDE.md file should be placed in your project root or `.claude/` director
 │   │   ├── tester_agent.md                 # Functional validation (TESTER)
 │   │   └── documenter_agent.md             # Documentation archival (DOCUMENTER)
 ├── rules/
-│   ├── core-philosophy.md
-│   ├── code-style-quality.md
-│   ├── testing.md
-│   ├── security.md
-│   └── [other converted rules]
+│   ├── 01-development-workflow.md
+│   ├── 02-testing-security.md
+│   ├── 03-communication-documentation.md
+│   ├── 04-code-quality-standards.md
+│   ├── 05-error-documentation.md
+│   └── 06-lessons-learned.md
 ├── context/
 │   ├── architecture.md
 │   └── domain.md
 └── CLAUDE.md (this file)
 ```
 
-## 🔄 Continuous Improvement
+## 🔄 Rule Management & Continuous Improvement
 
-- Regularly update rules based on project experience
-- Maintain lessons learned documentation
-- Adapt guidelines to project-specific needs
-- Ensure consistency across development team
+### How to Use This Index
+
+1. **Start Here**: Use this CLAUDE.md as your central reference index
+2. **Follow Links**: Click rule references to access detailed guidelines  
+3. **Apply Systematically**: Use the Rule Application Priority as your guide
+4. **Context-Aware**: Select specialized workflows based on project type
+5. **Document Learning**: Update 05-error-documentation.md and 06-lessons-learned.md as you work
+
+### Updating Rules
+
+- **Core Rules**: Modify files in `.claude/rules/` for fundamental changes
+- **Specialized Workflows**: Update prompts in `.claude/prompts/` for agent-specific guidance
+- **Index Updates**: Update this CLAUDE.md when adding new rule files or major restructuring
+- **Version Control**: Always commit rule changes to maintain consistency across sessions
+
+### Rule Validation
+
+- Ensure all referenced files exist and are accessible
+- Validate that rule links point to correct locations
+- Test specialized workflows before documenting them
+- Keep rule content aligned with actual development practices
+
+### Continuous Improvement Process
+
+- **Regular Review**: Periodically review rules for relevance and accuracy
+- **Experience Integration**: Update rules based on project learnings and challenges
+- **Pattern Recognition**: Document recurring patterns in 06-lessons-learned.md
+- **Error Prevention**: Log common issues in 05-error-documentation.md
+- **Team Alignment**: Ensure rules reflect team consensus and best practices
 
 ---
 
-*This comprehensive rule set ensures consistent, high-quality development practices across all projects while maintaining flexibility for specific requirements and contexts.*
+*This comprehensive rule index ensures consistent, high-quality development practices across all projects while maintaining flexibility for specific requirements and contexts. The structured approach with core rules and specialized workflows provides both foundational guidance and advanced capabilities for complex projects.*
