@@ -63,16 +63,7 @@
             "Bash(eval *)"
         ],
         "additionalDirectories": [
-            "/home",
-            "/tmp",
-            "/opt/projects",
-            "/workspace",
-            "/app",
-            "/src",
-            "/code",
-            "/repo",
-            "/data",
-            "/config"
+            "/tmp"
         ]
     },
     "hooks": {
