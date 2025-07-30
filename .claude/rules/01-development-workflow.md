@@ -15,6 +15,7 @@
    - Review documentation: PRD, README.md, docs/architecture.md, docs/technical.md
    - **<DECOMPOSE>**: Break problems into smaller sub-problems
    - Use **<STEP BY STEP REASONING>** for solution formulation
+   - Use proper Subagent for Architecture, Planning and Analysis
 
 2. **Code Analysis**
    - **<ANALYZE CODE>**: Identify affected components, dependencies
@@ -27,17 +28,20 @@
    - **<PLAN CODE>**: Detailed plan considering dependencies and architecture
    - **<STRUCTURED PROPOSALS>**: Specify files/lines changed, impacts, trade-offs
    - **<REASONING PRESENTATION>**: Explain changes and effects
+   - Use proper Subagent for Architecture, Planning and Analysis
 
 2. **Development**
    - **<INCREMENTAL ROLLOUTS>**: One logical change at a time
    - **<SIMULATION ANALYSIS>**: Dry runs to analyze impact
    - **<SIMULATION VALIDATION>**: Verify functionality preservation
    - Preserve existing architecture and patterns
+   - Use proper Subagent for Architecture, Planning and Analysis
 
 #### Phase 3: Validation & Documentation
 1. **Testing** (See testing rules)
 2. **Documentation Updates**: Update relevant docs when changes impact architecture
 3. **Progress Recording**: Update status files and task plans
+4. **Use proper Subagent for Documentation 
 
 ### Programming Principles
 - **Efficiency**: Use efficient algorithms and data structures
